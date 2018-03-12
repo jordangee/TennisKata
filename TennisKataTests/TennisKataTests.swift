@@ -18,4 +18,19 @@ class TennisKataTests: XCTestCase {
 
         XCTAssertTrue((firstPlayerScore == 0 && secondPlayerScore == 1) || (firstPlayerScore == 1 && secondPlayerScore == 0))
     }
+    
+    func testGetScore() {
+        let game = Game(firstPlayer, secondPlayer)
+        
+        var score = game.getScore()
+        XCTAssert(score == [0,0])
+        
+        game.scorePoint()
+        score = game.getScore()
+        XCTAssert((score == [0,1]) || (score == [1,0]))
+    }
+    
+    func testScorePointWhen40WinsGame() {
+        
+    }
 }

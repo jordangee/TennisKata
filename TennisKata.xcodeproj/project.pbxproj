@@ -372,6 +372,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J543H758C9;
 				INFOPLIST_FILE = TennisKata/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jordangriffin.TennisKata;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -387,6 +388,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J543H758C9;
 				INFOPLIST_FILE = TennisKata/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jordangriffin.TennisKata;
 				PRODUCT_NAME = "$(TARGET_NAME)";
