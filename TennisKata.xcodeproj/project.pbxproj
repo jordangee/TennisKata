@@ -14,6 +14,10 @@
 		FC4EBFBB20561C9900C120EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC4EBFBA20561C9900C120EA /* Assets.xcassets */; };
 		FC4EBFBE20561C9900C120EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4EBFBC20561C9900C120EA /* LaunchScreen.storyboard */; };
 		FC4EBFC920561C9900C120EA /* TennisKataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4EBFC820561C9900C120EA /* TennisKataTests.swift */; };
+		FC4EBFD420561D1800C120EA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4EBFD320561D1800C120EA /* Player.swift */; };
+		FC4EBFD520561D3B00C120EA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4EBFD320561D1800C120EA /* Player.swift */; };
+		FC4EBFD720561D4800C120EA /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4EBFD620561D4800C120EA /* Game.swift */; };
+		FC4EBFD820561D9E00C120EA /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4EBFD620561D4800C120EA /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,8 @@
 		FC4EBFC420561C9900C120EA /* TennisKataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TennisKataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4EBFC820561C9900C120EA /* TennisKataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisKataTests.swift; sourceTree = "<group>"; };
 		FC4EBFCA20561C9900C120EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC4EBFD320561D1800C120EA /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		FC4EBFD620561D4800C120EA /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,8 @@
 				FC4EBFBC20561C9900C120EA /* LaunchScreen.storyboard */,
 				FC4EBFBF20561C9900C120EA /* Info.plist */,
 				FC4EBFB720561C9900C120EA /* TennisKata.xcdatamodeld */,
+				FC4EBFD320561D1800C120EA /* Player.swift */,
+				FC4EBFD620561D4800C120EA /* Game.swift */,
 			);
 			path = TennisKata;
 			sourceTree = "<group>";
@@ -202,6 +210,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC4EBFD420561D1800C120EA /* Player.swift in Sources */,
+				FC4EBFD720561D4800C120EA /* Game.swift in Sources */,
 				FC4EBFB320561C9900C120EA /* ViewController.swift in Sources */,
 				FC4EBFB920561C9900C120EA /* TennisKata.xcdatamodeld in Sources */,
 				FC4EBFB120561C9900C120EA /* AppDelegate.swift in Sources */,
@@ -212,6 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC4EBFD520561D3B00C120EA /* Player.swift in Sources */,
+				FC4EBFD820561D9E00C120EA /* Game.swift in Sources */,
 				FC4EBFC920561C9900C120EA /* TennisKataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J543H758C9;
 				INFOPLIST_FILE = TennisKata/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jordangriffin.TennisKata;
@@ -372,6 +385,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J543H758C9;
 				INFOPLIST_FILE = TennisKata/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jordangriffin.TennisKata;
