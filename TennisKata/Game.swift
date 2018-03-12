@@ -7,9 +7,16 @@ class Game {
         self.players = [firstPlayer, secondPlayer]
     }
     
-    func scorePoint() {
+    func scorePoint(){
         let playerIndex = Int(arc4random_uniform(2))
-        players[playerIndex].addPoint()
+        print("playerIndex: \(playerIndex)")
+        let player = players[playerIndex]
+        if player.points == 3 {
+            player.winner = true
+        } else {
+            player.addPoint()
+        }
+        
     }
     
     func getScore() -> [Int] {

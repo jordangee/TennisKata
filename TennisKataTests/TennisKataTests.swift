@@ -6,6 +6,8 @@ class TennisKataTests: XCTestCase {
     let secondPlayer = Player()
     
     override func setUp() {
+        firstPlayer.points = 0
+        secondPlayer.points = 0
         super.setUp()
     }
 
@@ -31,6 +33,16 @@ class TennisKataTests: XCTestCase {
     }
     
     func testScorePointWhen40WinsGame() {
-        
+        let game = Game(firstPlayer, secondPlayer)
+        while !firstPlayer.winner && !secondPlayer.winner {
+            game.scorePoint()
+        }
+        if firstPlayer.winner {
+            XCTAssertEqual(firstPlayer.points, 3)
+            XCTAssertEqual(secondPlayer.winner, false)
+        } else {
+            XCTAssertEqual(secondPlayer.points, 3)
+            XCTAssertEqual(firstPlayer.winner, false)
+        }
     }
 }
